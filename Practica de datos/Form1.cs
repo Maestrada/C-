@@ -1,11 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
 using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Practica_de_datos
@@ -333,6 +329,11 @@ namespace Practica_de_datos
 
         #region Metodos auxiliares
 
+        /// <summary>
+        /// Lee los datos del formulario y crea un objeto 
+        /// para ser guardado en la DB
+        /// </summary>
+        /// <returns></returns>
         private CTelefonos returnObjectCtelefono()
         {
             CTelefonos cTelefonos = new CTelefonos();
@@ -347,6 +348,12 @@ namespace Practica_de_datos
             return cTelefonos;
         }
 
+        /// <summary>
+        /// Verifica que los campos requeridos 
+        /// del objeto esten completos
+        /// </summary>
+        /// <param name="cTelefonos"></param>
+        /// <returns></returns>
         private bool validarCampos(CTelefonos cTelefonos)
         {
             bool valido = false;
@@ -365,6 +372,10 @@ namespace Practica_de_datos
             return !valido;
         }
 
+        /// <summary>
+        /// Actualiza el label que muestra el total y la ubicacion 
+        /// de la navegacion de la app
+        /// </summary>
         private void ActualizarContador()
         {
             List<CTelefonos> listaTelefonos;
@@ -392,6 +403,11 @@ namespace Practica_de_datos
 
         }
 
+        /// <summary>
+        /// controla la habilitacion y la vision 
+        /// de elementos del formulario que se estan utilizando la app
+        /// </summary>
+        /// <param name="habilitar"></param>
         private void habilitarCampos(bool habilitar)
         {
             btBorrar.Enabled = habilitar;
@@ -405,6 +421,10 @@ namespace Practica_de_datos
             btCancelar.Visible = !habilitar;
             btBorrar.Visible = habilitar;
         }
+
+        /// <summary>
+        /// Limpia los textbox del formulario
+        /// </summary>
         private void LimprarCampos()
         {
             tbBuscar.Clear();
@@ -416,6 +436,11 @@ namespace Practica_de_datos
             lbFechaCreado.Text = "";
         }
 
+        /// <summary>
+        /// Muestra u oculta un pictureBox con una imagen de carga
+        /// mintras la app esta procesando la informacion
+        /// </summary>
+        /// <param name="mostrar"></param>
         private void MostrarImagenCarga( bool mostrar)
         {
             pbLoader.Visible = mostrar;
