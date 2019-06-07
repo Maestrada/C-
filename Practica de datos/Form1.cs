@@ -448,5 +448,9 @@ namespace Practica_de_datos
 
         #endregion
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            btPrimero.PerformClick();
+        }
     }
 }

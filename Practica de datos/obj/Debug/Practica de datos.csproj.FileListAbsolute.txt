@@ -8,3 +8,13 @@ C:\Users\mestrada.WR\source\repos\Practica de datos\Practica de datos\bin\Debug\
 C:\Users\mestrada.WR\source\repos\Practica de datos\Practica de datos\bin\Debug\Practica de datos.pdb
 C:\Users\mestrada.WR\source\repos\Practica de datos\Practica de datos\obj\Debug\Practica de datos.exe
 C:\Users\mestrada.WR\source\repos\Practica de datos\Practica de datos\obj\Debug\Practica de datos.pdb
+Z:\Repo\C-sharp\Practica de datos\bin\Debug\Practica de datos.exe.config
+Z:\Repo\C-sharp\Practica de datos\bin\Debug\Practica de datos.exe
+Z:\Repo\C-sharp\Practica de datos\bin\Debug\Practica de datos.pdb
+Z:\Repo\C-sharp\Practica de datos\obj\Debug\Practica de datos.csprojAssemblyReference.cache
+Z:\Repo\C-sharp\Practica de datos\obj\Debug\Practica_de_datos.Form1.resources
+Z:\Repo\C-sharp\Practica de datos\obj\Debug\Practica_de_datos.Properties.Resources.resources
+Z:\Repo\C-sharp\Practica de datos\obj\Debug\Practica de datos.csproj.GenerateResource.cache
+Z:\Repo\C-sharp\Practica de datos\obj\Debug\Practica de datos.csproj.CoreCompileInputs.cache
+Z:\Repo\C-sharp\Practica de datos\obj\Debug\Practica de datos.exe
+Z:\Repo\C-sharp\Practica de datos\obj\Debug\Practica de datos.pdb

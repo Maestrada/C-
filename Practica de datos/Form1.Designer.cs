@@ -43,24 +43,24 @@
             this.lbFechaCreado = new System.Windows.Forms.Label();
             this.tbTelefono = new System.Windows.Forms.MaskedTextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btBuscar = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.pbLoader = new System.Windows.Forms.PictureBox();
+            this.btNuevo = new System.Windows.Forms.Button();
+            this.btAdd = new System.Windows.Forms.Button();
+            this.btBorrar = new System.Windows.Forms.Button();
+            this.btCancelar = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.btPrimero = new System.Windows.Forms.Button();
             this.btAnterior = new System.Windows.Forms.Button();
             this.btSiguiente = new System.Windows.Forms.Button();
             this.btUltimo = new System.Windows.Forms.Button();
-            this.pbLoader = new System.Windows.Forms.PictureBox();
-            this.btNuevo = new System.Windows.Forms.Button();
-            this.btAdd = new System.Windows.Forms.Button();
-            this.btBorrar = new System.Windows.Forms.Button();
-            this.btCancelar = new System.Windows.Forms.Button();
-            this.btBuscar = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoader)).BeginInit();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLoader)).BeginInit();
             this.SuspendLayout();
             // 
             // tbNombre
@@ -203,6 +203,20 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Busqueda";
             // 
+            // btBuscar
+            // 
+            this.btBuscar.Image = global::Practica_de_datos.Properties.Resources.Blue_search_find_12583;
+            this.btBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btBuscar.Location = new System.Drawing.Point(2, 49);
+            this.btBuscar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btBuscar.Name = "btBuscar";
+            this.btBuscar.Size = new System.Drawing.Size(114, 38);
+            this.btBuscar.TabIndex = 13;
+            this.btBuscar.Text = "Buscar";
+            this.btBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btBuscar.UseVisualStyleBackColor = true;
+            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.pbLoader);
@@ -218,6 +232,80 @@
             this.groupBox2.TabIndex = 24;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones";
+            // 
+            // pbLoader
+            // 
+            this.pbLoader.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.pbLoader.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pbLoader.Image = global::Practica_de_datos.Properties.Resources.GCNyjJY;
+            this.pbLoader.Location = new System.Drawing.Point(0, 15);
+            this.pbLoader.Name = "pbLoader";
+            this.pbLoader.Size = new System.Drawing.Size(120, 141);
+            this.pbLoader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbLoader.TabIndex = 27;
+            this.pbLoader.TabStop = false;
+            this.pbLoader.Visible = false;
+            // 
+            // btNuevo
+            // 
+            this.btNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btNuevo.Enabled = false;
+            this.btNuevo.Image = global::Practica_de_datos.Properties.Resources.blue_insert_append_12420;
+            this.btNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btNuevo.Location = new System.Drawing.Point(2, 21);
+            this.btNuevo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btNuevo.Name = "btNuevo";
+            this.btNuevo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.btNuevo.Size = new System.Drawing.Size(114, 38);
+            this.btNuevo.TabIndex = 19;
+            this.btNuevo.Text = "Nuevo";
+            this.btNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btNuevo.UseVisualStyleBackColor = true;
+            this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
+            // 
+            // btAdd
+            // 
+            this.btAdd.Image = global::Practica_de_datos.Properties.Resources.blue_floppy_12557;
+            this.btAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btAdd.Location = new System.Drawing.Point(2, 65);
+            this.btAdd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btAdd.Name = "btAdd";
+            this.btAdd.Size = new System.Drawing.Size(114, 38);
+            this.btAdd.TabIndex = 11;
+            this.btAdd.Text = "Guardar";
+            this.btAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btAdd.UseVisualStyleBackColor = true;
+            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
+            // 
+            // btBorrar
+            // 
+            this.btBorrar.Enabled = false;
+            this.btBorrar.Image = global::Practica_de_datos.Properties.Resources.blue_refuse_remove_delete_12601;
+            this.btBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btBorrar.Location = new System.Drawing.Point(2, 109);
+            this.btBorrar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btBorrar.Name = "btBorrar";
+            this.btBorrar.Size = new System.Drawing.Size(114, 38);
+            this.btBorrar.TabIndex = 12;
+            this.btBorrar.Text = "Borrar";
+            this.btBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btBorrar.UseVisualStyleBackColor = true;
+            this.btBorrar.Click += new System.EventHandler(this.btBorrar_Click);
+            // 
+            // btCancelar
+            // 
+            this.btCancelar.Image = global::Practica_de_datos.Properties.Resources.blue_exit_delete_delete_12417;
+            this.btCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btCancelar.Location = new System.Drawing.Point(2, 109);
+            this.btCancelar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btCancelar.Name = "btCancelar";
+            this.btCancelar.Size = new System.Drawing.Size(114, 38);
+            this.btCancelar.TabIndex = 20;
+            this.btCancelar.Text = "Cancel";
+            this.btCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btCancelar.UseVisualStyleBackColor = true;
+            this.btCancelar.Visible = false;
+            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
             // 
             // groupBox3
             // 
@@ -311,94 +399,6 @@
             this.btUltimo.UseVisualStyleBackColor = true;
             this.btUltimo.Click += new System.EventHandler(this.btUltimo_Click);
             // 
-            // pbLoader
-            // 
-            this.pbLoader.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.pbLoader.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pbLoader.Image = global::Practica_de_datos.Properties.Resources.GCNyjJY;
-            this.pbLoader.Location = new System.Drawing.Point(0, 15);
-            this.pbLoader.Name = "pbLoader";
-            this.pbLoader.Size = new System.Drawing.Size(120, 141);
-            this.pbLoader.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbLoader.TabIndex = 27;
-            this.pbLoader.TabStop = false;
-            this.pbLoader.Visible = false;
-            // 
-            // btNuevo
-            // 
-            this.btNuevo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btNuevo.Enabled = false;
-            this.btNuevo.Image = global::Practica_de_datos.Properties.Resources.blue_insert_append_12420;
-            this.btNuevo.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btNuevo.Location = new System.Drawing.Point(2, 21);
-            this.btNuevo.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btNuevo.Name = "btNuevo";
-            this.btNuevo.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.btNuevo.Size = new System.Drawing.Size(114, 38);
-            this.btNuevo.TabIndex = 19;
-            this.btNuevo.Text = "Nuevo";
-            this.btNuevo.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btNuevo.UseVisualStyleBackColor = true;
-            this.btNuevo.Click += new System.EventHandler(this.btNuevo_Click);
-            // 
-            // btAdd
-            // 
-            this.btAdd.Image = global::Practica_de_datos.Properties.Resources.blue_floppy_12557;
-            this.btAdd.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btAdd.Location = new System.Drawing.Point(2, 65);
-            this.btAdd.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btAdd.Name = "btAdd";
-            this.btAdd.Size = new System.Drawing.Size(114, 38);
-            this.btAdd.TabIndex = 11;
-            this.btAdd.Text = "Guardar";
-            this.btAdd.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btAdd.UseVisualStyleBackColor = true;
-            this.btAdd.Click += new System.EventHandler(this.btAdd_Click);
-            // 
-            // btBorrar
-            // 
-            this.btBorrar.Enabled = false;
-            this.btBorrar.Image = global::Practica_de_datos.Properties.Resources.blue_refuse_remove_delete_12601;
-            this.btBorrar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btBorrar.Location = new System.Drawing.Point(2, 109);
-            this.btBorrar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btBorrar.Name = "btBorrar";
-            this.btBorrar.Size = new System.Drawing.Size(114, 38);
-            this.btBorrar.TabIndex = 12;
-            this.btBorrar.Text = "Borrar";
-            this.btBorrar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btBorrar.UseVisualStyleBackColor = true;
-            this.btBorrar.Click += new System.EventHandler(this.btBorrar_Click);
-            // 
-            // btCancelar
-            // 
-            this.btCancelar.Image = global::Practica_de_datos.Properties.Resources.blue_exit_delete_delete_12417;
-            this.btCancelar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btCancelar.Location = new System.Drawing.Point(2, 109);
-            this.btCancelar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btCancelar.Name = "btCancelar";
-            this.btCancelar.Size = new System.Drawing.Size(114, 38);
-            this.btCancelar.TabIndex = 20;
-            this.btCancelar.Text = "Cancel";
-            this.btCancelar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btCancelar.UseVisualStyleBackColor = true;
-            this.btCancelar.Visible = false;
-            this.btCancelar.Click += new System.EventHandler(this.btCancelar_Click);
-            // 
-            // btBuscar
-            // 
-            this.btBuscar.Image = global::Practica_de_datos.Properties.Resources.Blue_search_find_12583;
-            this.btBuscar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btBuscar.Location = new System.Drawing.Point(2, 49);
-            this.btBuscar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btBuscar.Name = "btBuscar";
-            this.btBuscar.Size = new System.Drawing.Size(114, 38);
-            this.btBuscar.TabIndex = 13;
-            this.btBuscar.Text = "Buscar";
-            this.btBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btBuscar.UseVisualStyleBackColor = true;
-            this.btBuscar.Click += new System.EventHandler(this.btBuscar_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -416,14 +416,15 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Registro contactos";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pbLoader)).EndInit();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pbLoader)).EndInit();
             this.ResumeLayout(false);
 
         }
