@@ -7,3 +7,5 @@ Done with windows forms.
 Using SqlClient Objects.
 
 Include sql table definition file
+tableDefinition.sql
+
