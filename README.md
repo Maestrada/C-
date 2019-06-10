@@ -9,3 +9,4 @@ Using SqlClient Objects.
 Include sql table definition file
 tableCreation.sql
 
+Modofy your AppConfig Connection string
